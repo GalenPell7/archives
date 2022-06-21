@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/splashScreenImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/pictures"
+        android:fontFamily="@"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ivar_the_boneless" />
+
+    <Button
+        android:id="@+id/explore"
+        android:layout_width="307dp"
+        android:layout_height="98dp"
+        android:shadowColor="#4E0101"
+        android:text="@string/explore"
+        android:backgroundTint="#4E0101"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#650303"
+        android:textColorHint="#6A0303"
+        android:textColorLink="#610101"
+        android:textSize="50sp"
+        android:theme="@style/ThemeOverlay.Material3.DynamicColors.DayNight"
+        app:layout_constraintBottom_toBottomOf="@+id/splashScreenImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/splashScreenImage"
+        app:layout_constraintVertical_bias="0.883"
+        app:rippleColor="#730202"
+        app:strokeColor="#5A0202" />
+
+    <TextView
+        android:id="@+id/backgroundTitle"
+        android:layout_width="477dp"
+        android:layout_height="137dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/explore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/splashScreenImage"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="447dp"
+        android:layout_height="111dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/medievalsharp"
+        android:text="@string/archives"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#780606"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundTitle"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundTitle"
+        app:layout_constraintStart_toStartOf="@+id/backgroundTitle"
+        app:layout_constraintTop_toTopOf="@+id/backgroundTitle"
+        app:layout_constraintVertical_bias="0.538" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

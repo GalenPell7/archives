@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/geo_button"
+        android:layout_width="365dp"
+        android:layout_height="147dp"
+        android:text="@string/explore"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <RadioGroup
+        android:id="@+id/milage_buttons"
+        android:layout_width="442dp"
+        android:layout_height="292dp"
+        app:layout_constraintBottom_toTopOf="@+id/geo_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605">
+
+        <RadioButton
+            android:id="@+id/twenty_five"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:text="@string/_25_miles" />
+
+        <RadioButton
+            android:id="@+id/fifty_miles"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:text="@string/_50_miles" />
+
+        <RadioButton
+            android:id="@+id/hundred_miles"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:text="@string/_100_miles" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="242dp"
+        android:layout_height="74dp"
+        android:text="@string/choose_milage"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/milage_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
+</androidx.constraintlayout.widget.ConstraintLayout>
